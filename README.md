@@ -1,0 +1,1 @@
+# Auyurvedic-Clinic-Management-System
