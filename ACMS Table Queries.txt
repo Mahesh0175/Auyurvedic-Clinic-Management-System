@@ -1,0 +1,105 @@
+1 .Role Table  : -
+
+CREATE TABLE role 
+(
+    rid INT PRIMARY KEY AUTO_INCREMENT,
+    rname VARCHAR(255) UNIQUE NOT NULL
+);
+
+
+2 .User Table : -
+
+CREATE TABLE user (
+    uid INT PRIMARY KEY AUTO_INCREMENT,
+    uname VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    fname VARCHAR(255) NOT NULL,
+    lname VARCHAR(255) NOT NULL,
+    dob DATE NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    rid INT NOT NULL,
+    gender ENUM('Male', 'Female', 'Other') NOT NULL,
+    FOREIGN KEY (rid) REFERENCES role(rid)
+);
+
+
+3. Patient Table : -
+
+CREATE TABLE Patient (
+    pid INT PRIMARY KEY AUTO_INCREMENT,
+    uid INT NOT NULL,
+    history TEXT,
+    did INT NOT NULL,
+    FOREIGN KEY (uid) REFERENCES user(uid),
+    FOREIGN KEY (did) REFERENCES diet_plan(did)
+);
+
+
+4. Employee Table :-
+
+CREATE TABLE Employee (
+    eid INT PRIMARY KEY AUTO_INCREMENT,
+    uid INT NOT NULL,
+    regno INT NOT NULL,
+    doj DATE NOT NULL,
+    gender ENUM('Male', 'Female', 'Other') NOT NULL,
+    qualification VARCHAR(255) NOT NULL,
+    FOREIGN KEY (uid) REFERENCES user(uid)
+);
+
+
+5 .Consult Table :-
+
+CREATE TABLE Consult (
+    cid INT PRIMARY KEY AUTO_INCREMENT,
+    pid INT NOT NULL,
+    aid INT NOT NULL,
+    prescription VARCHAR(255),
+    treatment VARCHAR(255),
+    FOREIGN KEY (pid) REFERENCES Patient(pid),
+    FOREIGN KEY (aid) REFERENCES Appointment(aid)
+);
+
+
+6 . Payment Table : -
+
+CREATE TABLE Payment (
+    bill_no INT PRIMARY KEY AUTO_INCREMENT,
+    pid INT NOT NULL,
+    amount INT NOT NULL,
+    p_date DATE NOT NULL,
+    FOREIGN KEY (pid) REFERENCES Patient(pid) 
+);	
+
+
+ 7. Feedback Table :-
+
+CREATE TABLE Feedback (
+    fid INT PRIMARY KEY AUTO_INCREMENT,
+    content TEXT NOT NULL,
+    rating INT NOT NULL
+);
+
+
+8. Appointment Table :-
+
+CREATE TABLE Appointment (
+    aid INT PRIMARY KEY AUTO_INCREMENT,
+    pid INT NOT NULL,
+    app_date DATE NOT NULL,
+    app_time TIME NOT NULL,
+    reason TEXT NOT NULL,
+    FOREIGN KEY (pid) REFERENCES Patient(pid)
+);
+
+
+9 . Diet_Plan Table : -
+
+CREATE TABLE Diet_Plan (
+    did INT PRIMARY KEY AUTO_INCREMENT,
+    pid INT NOT NULL,
+    d_plan TEXT,
+    food TEXT,
+    routine TEXT,
+    FOREIGN KEY (pid) REFERENCES Patient(pid)
+);
