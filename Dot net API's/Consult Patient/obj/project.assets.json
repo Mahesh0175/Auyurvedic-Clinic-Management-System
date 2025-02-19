@@ -2617,23 +2617,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\manka\\.nuget\\packages\\": {},
+    "C:\\Users\\sheta\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\manka\\Desktop\\New_Project\\Ayurvedic-Clinic-Mgmt\\Dot net API's\\Consult Patient\\Consult Patient.csproj",
+      "projectUniqueName": "F:\\docs\\OneDrive\\Desktop\\Aayurvedic Clinic Management C-DAC\\Dot net API's\\Consult Patient\\Consult Patient.csproj",
       "projectName": "Consult Patient",
-      "projectPath": "C:\\Users\\manka\\Desktop\\New_Project\\Ayurvedic-Clinic-Mgmt\\Dot net API's\\Consult Patient\\Consult Patient.csproj",
-      "packagesPath": "C:\\Users\\manka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\manka\\Desktop\\New_Project\\Ayurvedic-Clinic-Mgmt\\Dot net API's\\Consult Patient\\obj\\",
+      "projectPath": "F:\\docs\\OneDrive\\Desktop\\Aayurvedic Clinic Management C-DAC\\Dot net API's\\Consult Patient\\Consult Patient.csproj",
+      "packagesPath": "C:\\Users\\sheta\\.nuget\\packages\\",
+      "outputPath": "F:\\docs\\OneDrive\\Desktop\\Aayurvedic Clinic Management C-DAC\\Dot net API's\\Consult Patient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\manka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sheta\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
