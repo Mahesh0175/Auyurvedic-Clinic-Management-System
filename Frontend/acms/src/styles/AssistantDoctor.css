@@ -1,0 +1,110 @@
+/* AssistantDoctor.css */
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+}
+
+.navbar {
+  background-color: white;
+  padding: 10px 20px;
+  /* height: 120px; */
+}
+
+.navbar-brand img {
+  width: 120px;
+  height: 80px;
+}
+
+.assDoctor-name {
+  font-size: 20px;
+  margin: 0;
+  font-weight: bold;
+  color: black;
+
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-right: 60px;
+}
+
+.navbar-toggler-icon {
+  background-color: #007bff;
+}
+
+.btn-outline-primary {
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: black;
+}
+
+.main-content {
+  padding: 20px;
+
+}
+
+.main-box {
+  max-width: 1200px;
+  margin: 50px auto;
+
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+  color: #333;
+}
+
+.logout-btn2 {
+  background-color: red;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.logout-btn2:hover {
+  background-color: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .main-box {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+body {
+  background-color: aquamarine;
+}
